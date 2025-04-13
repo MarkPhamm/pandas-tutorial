@@ -120,6 +120,17 @@ df.loc[5]
 df.iloc[5]
 ```
 
+### 2.8 Change datatypes using `astypes`
+```python
+df = df.astype({'col_name': 'desired_dtype'})
+# or 
+df['col_name'] = df['col_name'].astype('desired_dtype')
+```
+
+# Return all rows where the 'verified' column is NOT True
+```python
+df[~df['col'] == 'target']
+```
 ---
 
 ## 3. Aggregation Functions
