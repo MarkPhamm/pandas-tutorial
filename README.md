@@ -81,6 +81,11 @@ df.duplicated().sum()
 df['col'].value_counts()
 ```
 
+### 1.10 .empty to check if a df is empty
+```python
+if df.empty:
+   df = pd.DataFrame({'SecondHighestSalary': [None]}) 
+```
 ---
 
 ## 2. Basic Manipulation
@@ -230,4 +235,79 @@ df['col'].isnull()
 ```python
 df[df['col'].isnull()]
 ```
+
+---
+
+## 7. Duplicates Handling
+
+### 7.1 Drop duplicate rows  
+```python
+df.drop_duplicates()
+```
+
+### 7.2 Drop duplicates based on specific columns  
+```python
+df.drop_duplicates(subset=['col1', 'col2'])
+```
+
+### 7.3 Keep the last occurrence of duplicates  
+```python
+df.drop_duplicates(keep='last')
+```
+
+### 7.4 Keep no duplicates at all  
+```python
+df[df.duplicated() == False]
+```
+
+### 7.5 Get only duplicate rows  
+```python
+df[df.duplicated()]
+```
+
+### 7.6 Mark duplicates with a boolean  
+```python
+df.duplicated()
+```
+
+---
+
+## 8. CSV File Handling
+
+### 8.1 Read a CSV file  
+```python
+df = pd.read_csv('data.csv')
+```
+
+### 8.2 Read a CSV with index column  
+```python
+df = pd.read_csv('data.csv', index_col=0)
+```
+
+### 8.3 Write a DataFrame to CSV  
+```python
+df.to_csv('output.csv', index=False)
+```
+
+### 8.4 Read a CSV with specific columns  
+```python
+df = pd.read_csv('data.csv', usecols=['col1', 'col2'])
+```
+
+### 8.5 Read only first N rows from a CSV  
+```python
+df = pd.read_csv('data.csv', nrows=100)
+```
+
+### 8.6 Skip initial rows while reading  
+```python
+df = pd.read_csv('data.csv', skiprows=1)
+```
+
+### 8.7 Handle missing values while reading  
+```python
+df = pd.read_csv('data.csv', na_values=['NA', 'null', 'NaN'])
+```
+
+---
 
