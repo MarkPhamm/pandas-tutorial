@@ -1,0 +1,16 @@
+employee_id,first_name,last_name,department,salary,hire_date,is_manager,performance_score,email,last_login
+1,John,Smith,Engineering,75000,2020-01-15,True,4.5,john.smith@company.com,2023-12-01 09:30:00
+2,Sarah,Johnson,Marketing,65000,2019-06-20,True,4.2,sarah.j@company.com,2023-12-02 10:15:00
+3,Michael,Brown,Sales,80000,2021-03-10,False,3.8,michael.b@company.com,2023-12-01 14:20:00
+4,Emily,Davis,Engineering,72000,2020-11-05,False,4.7,emily.d@company.com,2023-12-02 11:45:00
+5,David,Wilson,HR,60000,2018-09-12,True,4.0,david.w@company.com,2023-12-01 16:30:00
+6,Lisa,Anderson,Marketing,68000,2021-07-22,False,3.9,lisa.a@company.com,2023-12-02 09:00:00
+7,James,Taylor,Sales,82000,2019-04-18,True,4.3,james.t@company.com,2023-12-01 13:15:00
+8,Jennifer,Martinez,Engineering,78000,2020-08-30,False,4.6,jennifer.m@company.com,2023-12-02 15:45:00
+9,Robert,Thompson,HR,62000,2021-01-25,False,3.7,robert.t@company.com,2023-12-01 10:00:00
+10,Jessica,Garcia,Marketing,67000,2019-11-08,True,4.1,jessica.g@company.com,2023-12-02 14:30:00
+11,William,Lee,Engineering,76000,2020-05-14,False,4.4,william.l@company.com,2023-12-01 11:20:00
+12,Amanda,White,Sales,79000,2021-02-28,False,3.6,amanda.w@company.com,2023-12-02 16:00:00
+13,Daniel,Harris,HR,61000,2018-12-03,True,4.8,daniel.h@company.com,2023-12-01 09:45:00
+14,Michelle,Clark,Marketing,69000,2020-07-19,False,4.0,michelle.c@company.com,2023-12-02 12:30:00
+15,Christopher,Lewis,Engineering,74000,2019-08-25,True,4.2,christopher.l@company.com,2023-12-01 15:15:00 
